@@ -13,11 +13,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>notesmanagement  project for Spring Boot</description>
-    <properties>
-        <java.version>21</java.version>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-    </properties>
+	<properties>
+		<java.version>21</java.version>
+	</properties>
 	<dependencies>
 
 		<dependency>
@@ -74,10 +72,16 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version> <!-- Use the latest version available on Maven Central -->
+				<configuration>
+					<release>11</release> <!-- Adjust the Java version according to your project requirements -->
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
+
 
 </project>
